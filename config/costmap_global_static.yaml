@@ -1,0 +1,8 @@
+global_frame: map
+rolling_window: false
+track_unknown_space: true
+
+plugins:
+  #- {name: static,                  type: "costmap_2d::StaticLayer"}
+  - {name: rgbd_obstacle_layer,              type: "spatio_temporal_voxel_layer/SpatioTemporalVoxelLayer"}
+  - {name: inflation,               type: "costmap_2d::InflationLayer"}
