@@ -64,8 +64,8 @@ DWAPlannerROS:
 
   max_trans_vel: 0.5
   min_trans_vel: 0.1
-  max_rot_vel: 1.0
-  min_rot_vel: 0.2
+  max_rot_vel: 0.5
+  min_rot_vel: 0.1
 
   # Goal Tolerance Parameters
   yaw_goal_tolerance: 0.1
