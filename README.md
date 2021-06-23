@@ -1,1 +1,1 @@
-# Scout-Navigation
+# scout_navigation

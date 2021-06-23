@@ -1,6 +1,3 @@
-footprint: [[-0.35, -0.3], [-0.35, 0.3], [0.35, 0.3], [0.35, -0.3]] #机器人轮廓
-footprint_padding: 0.01 #轮廓膨胀系数
-
 robot_base_frame: base_link
 update_frequency: 4.0
 publish_frequency: 3.0
