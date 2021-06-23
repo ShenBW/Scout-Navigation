@@ -1,3 +1,4 @@
+#! /home/tingxfan/anaconda2/bin/python
 import rospy
 
 from geometry_msgs.msg import Twist
@@ -14,9 +15,9 @@ class VelocityFilter(object):
         rospy.Subscriber("/raw_cmd_vel", Twist, self._cmd_cb)
 
     def _cmd_cb(self, msg):
-        msg.linear.x = *= self.linear_x_ratio
+        msg.linear.x *= self.linear_x_ratio
         msg.angular.z *= self.angular_z_ratio
-        self._cmd_pub.publish = msg
+        self._cmd_pub.publish(msg)
 
 
 if __name__ == "__main__":

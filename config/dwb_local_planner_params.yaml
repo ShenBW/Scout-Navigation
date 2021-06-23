@@ -12,7 +12,7 @@ DWBLocalPlanner:
   max_speed_xy: 0.5    # max_trans_vel: 0.8  # choose slightly less than the base's capability
   min_speed_xy: 0.05    # min_trans_vel: 0.1  # this is the min trans velocity when there is negligible rotational velocity
 
-  max_vel_theta: 0.2    # max_rot_vel: 1.0  # choose slightly less than the base's capability
+  max_vel_theta: 0.6    # max_rot_vel: 1.0  # choose slightly less than the base's capability
   min_speed_theta: 0.0  # min_rot_vel: 0.1 default: 0.4  # this is the min angular velocity when there is negligible translational velocity
 
   acc_lim_x: 0.25
