@@ -1,3 +1,6 @@
+footprint: [[-0.35, -0.3], [-0.35, 0.3], [0.35, 0.3], [0.35, -0.3]] #机器人轮廓
+footprint_padding: 0.01 #轮廓膨胀系数
+
 robot_base_frame: base_link
 update_frequency: 4.0
 publish_frequency: 3.0
@@ -25,7 +28,7 @@ static:
 
 #膨胀层：做动态路径规划时，计算与障碍物的距离的代价值
 inflation:
-    inflation_radius: 0.5
+    inflation_radius: 1.0
 
 #rgbd_obstacle_layer 
 rgbd_obstacle_layer:

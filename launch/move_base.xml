@@ -8,7 +8,7 @@
   <!-- <arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/> -->
 
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
-    <rosparam file="$(find server_navigation)/config/move_base_common_params.yaml" command="load" />
+    <rosparam file="$(find scout_navigation)/config/move_base_common_params.yaml" command="load" />
     <rosparam file="$(find scout_navigation)/config/$(arg local_planner)_local_planner_params.yaml" command="load" />
 
     <!-- observation sources located in costmap_common.yaml -->
