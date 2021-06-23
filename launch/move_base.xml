@@ -27,6 +27,12 @@
     <rosparam file="$(find scout_navigation)/config/costmap_global_laser.yaml" command="load" ns="global_costmap" if="$(arg no_static_map)"/>
     <param name="global_costmap/width" value="100.0" if="$(arg no_static_map)"/>
     <param name="global_costmap/height" value="100.0" if="$(arg no_static_map)"/>
+    <remap from="/cmd_vel" to="/raw_cmd_vel" />
+  </node>
+
+  <node pkg="scout_navigation" type="velocity_filter.py" name="velocity_filter" output="screen">
+    <param name="linear_x_ratio" value="1.0"/>
+    <param name="angular_z_ratio" value="0.3"/>  
   </node>
 
 </launch>
