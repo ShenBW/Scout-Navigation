@@ -1,6 +1,9 @@
 global_frame: odom
 rolling_window: true
 
+inflation:
+    inflation_radius: 0.1
+
 plugins: #局部代价地图使用的地图插件（顺序颠倒会影响效果）
   #- {name: obstacles_laser,              type: "costmap_2d::ObstacleLayer"}
   - {name: rgbd_obstacle_layer,              type: "spatio_temporal_voxel_layer/SpatioTemporalVoxelLayer"}

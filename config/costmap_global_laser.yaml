@@ -2,6 +2,10 @@ global_frame: odom
 rolling_window: true
 track_unknown_space: true
 
+#膨胀层：做动态路径规划时，计算与障碍物的距离的代价值
+inflation:
+    inflation_radius: 0.2
+
 plugins:
   #- {name: obstacles_laser,           type: "costmap_2d::ObsatacleLayer"}
   - {name: rgbd_obstacle_layer,              type: "spatio_temporal_voxel_layer/SpatioTemporalVoxelLayer"}

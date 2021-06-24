@@ -23,10 +23,6 @@ static:
 #          topic: /os_cloud_node/points,  
 #          inf_is_valid: false}
 
-#膨胀层：做动态路径规划时，计算与障碍物的距离的代价值
-inflation:
-    inflation_radius: 0.2
-
 #rgbd_obstacle_layer 
 rgbd_obstacle_layer:
     enabled:               true
